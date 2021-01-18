@@ -1,5 +1,11 @@
-# VeroMoreno.com personal portfolio
-## Available Scripts
+ <div style="text-align:center"><img src="./img/portfolio.png" alt="background" style="width:70%; margin-left:auto; margin-right:auto; display: block; width:300px"/></div>
+
+# ✨ Verónica Moreno personal portfolio
+### Technologies
+* 💣 React
+* 💅🏾 HTML5 + CSS3
+
+### Available Scripts
 
 In the project directory, you can run:
 
