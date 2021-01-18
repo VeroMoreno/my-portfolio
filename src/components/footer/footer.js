@@ -29,7 +29,7 @@ export default class header extends Component {
           <div className="col-twelve">
             <div className="copyright">
               <span>© Copyright 2021</span>
-              <span>Design by <a href="https://www.veroMoreno.com/">e with ♥</a></span>
+              <span>Design by <a href="https://www.veroMoreno.com/">me, Verónica, with ♥</a></span>
             </div>
             <div className="go-top">
               <a className="smoothscroll" title="Back to Top" href="#top"><i className="im im-arrow-up" aria-hidden="true" /></a>

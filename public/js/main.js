@@ -31,13 +31,13 @@
             // force page scroll position to top at page refresh
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-            // will first fade out the loading animation 
+            // will first fade out the loading animation
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
+            });
             
-            // for hero content animations 
+            // for hero content animations
             $("html").removeClass('ss-preload');
             $("html").addClass('ss-loaded');
         
@@ -58,7 +58,6 @@
     /* Move header
      * -------------------------------------------------- */
     var ssMoveHeader = function () {
-        debugger;
         var hero = $('.page-hero'),
             hdr = $('header'),
             triggerHeight = hero.outerHeight() - 170;
@@ -96,44 +95,37 @@
 
     };
 
+    /* Mobile Menu
+     * ---------------------------------------------------- */ 
+    var ssMobileMenu = function() {
 
-   /* Mobile Menu
-    * ---------------------------------------------------- */ 
-    const ssMobileMenu = function() {
+        var toggleButton = $('.header-menu-toggle'),
+            nav = $('.header-nav-wrap');
 
-        const toggleButton = document.querySelector('.s-header__menu-toggle');
-        const headerNavWrap = document.querySelector('.s-header__nav-wrap');
-        const siteBody = document.querySelector("body");
-
-        if (!(toggleButton && headerNavWrap)) return;
-
-        toggleButton.addEventListener('click', function(event){
+        toggleButton.on('click', function(event){
             event.preventDefault();
-            toggleButton.classList.toggle('is-clicked');
-            siteBody.classList.toggle('menu-is-open');
+
+            toggleButton.toggleClass('is-clicked');
+            nav.slideToggle();
         });
 
-        headerNavWrap.querySelectorAll('.s-header__nav a').forEach(function(link) {
-            link.addEventListener("click", function(evt) {
+        if (toggleButton.is(':visible')) nav.addClass('mobile');
 
-                // at 800px and below
-                if (window.matchMedia('(max-width: 800px)').matches) {
-                    toggleButton.classList.toggle('is-clicked');
-                    siteBody.classList.toggle('menu-is-open');
-                }
-            });
+        $WIN.on('resize', function() {
+            if (toggleButton.is(':visible')) nav.addClass('mobile');
+            else nav.removeClass('mobile');
         });
 
-        window.addEventListener('resize', function() {
+        nav.find('a').on("click", function() {
 
-            // above 800px
-            if (window.matchMedia('(min-width: 801px)').matches) {
-                if (siteBody.classList.contains('menu-is-open')) siteBody.classList.remove('menu-is-open');
-                if (toggleButton.classList.contains("is-clicked")) toggleButton.classList.remove("is-clicked");
+            if (nav.hasClass('mobile')) {
+                toggleButton.toggleClass('is-clicked');
+                nav.slideToggle(); 
             }
         });
 
-    }; // end ssMobileMenu
+    };
+
 
     /* Masonry
      * ---------------------------------------------------- */ 
@@ -170,7 +162,7 @@
                     $size = $thumbLink.data('size').split('x'),
                     $width  = $size[0],
                     $height = $size[1];
-         
+
                 var item = {
                     src  : $href,
                     w    : $width,
@@ -207,7 +199,7 @@
     /* slick slider
      * ------------------------------------------------------ */
     var ssSlickSlider = function() {
-        
+
         $('.testimonials__slider').slick({
             arrows: true,
             dots: false,
