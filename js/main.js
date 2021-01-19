@@ -230,7 +230,7 @@
 
         var sections = $(".target-section"),
             navigation_links = $(".header-nav li a");
-debugger;
+
         sections.waypoint( {
 
             handler: function(direction) {
