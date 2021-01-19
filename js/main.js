@@ -60,26 +60,26 @@
     var ssMoveHeader = function () {
         var hero = $('.page-hero'),
             hdr = $('header'),
-            triggerHeight = hero.outerHeight() - 170;
+            triggerHeight = hero.outerHeight();
 
 
         $WIN.on('scroll', function () {
 
             var loc = $WIN.scrollTop();
 
-            if (loc > triggerHeight + 80) {
+            if (loc > triggerHeight) {
                 hdr.addClass('sticky');
             } else {
                 hdr.removeClass('sticky');
             }
 
-            if (loc > triggerHeight + 80) {
+            if (loc > triggerHeight + 20) {
                 hdr.addClass('offset');
             } else {
                 hdr.removeClass('offset');
             }
 
-            if (loc > triggerHeight + 170) {
+            if (loc > triggerHeight + 150) {
                 hdr.addClass('scrolling');
             } else {
                 hdr.removeClass('scrolling');
