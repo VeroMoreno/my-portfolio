@@ -2386,7 +2386,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .s-home {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     min-height: 786px;
     background-color: transparent;
     position: relative;
