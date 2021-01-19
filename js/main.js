@@ -67,13 +67,13 @@
 
             var loc = $WIN.scrollTop();
 
-            if (loc > triggerHeight + 40) {
+            if (loc > triggerHeight + 80) {
                 hdr.addClass('sticky');
             } else {
                 hdr.removeClass('sticky');
             }
 
-            if (loc > triggerHeight + 40) {
+            if (loc > triggerHeight + 80) {
                 hdr.addClass('offset');
             } else {
                 hdr.removeClass('offset');
