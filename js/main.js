@@ -60,7 +60,7 @@
     var ssMoveHeader = function () {
         var hero = $('.page-hero'),
             hdr = $('header'),
-            triggerHeight = hero.outerHeight();
+            triggerHeight = hero.outerHeight(); // I change this *- 170*
 
 
         $WIN.on('scroll', function () {
