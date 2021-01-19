@@ -16,8 +16,8 @@ export default class header extends Component {
             <div className="masonry__brick">
               <div className="item-folio">
                 <div className="item-folio__thumb">
-                  <a href="images/portfolio/gallery/mealplan.png" className="thumb-link" title="MealPlan Proyect!" data-size="1050x700">
-                    <img src="images/portfolio/mealplan.png" srcSet="images/portfolio/mealplan.png 1x, images/portfolio/mealplan.png 2x" />
+                  <a href="images/portfolio/gallery/g-mealplan.png" className="thumb-link" title="MealPlan Proyect!" data-size="1050x700">
+                    <img src="images/portfolio/mealplan.png" srcSet="images/portfolio/mealplan.png 1x, images/portfolio/mealplan@2x.png 2x" alt="mealPlan!"/>
                     <span className="shadow-overlay" />
                   </a>
                 </div>
@@ -37,6 +37,7 @@ export default class header extends Component {
                 </div>
               </div> {/* end item-folio */}
             </div> {/* end masonry__brick */}
+
             <div className="masonry__brick">
               <div className="item-folio">
                 <div className="item-folio__thumb">

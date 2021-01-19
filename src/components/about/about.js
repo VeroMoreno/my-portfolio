@@ -33,11 +33,11 @@ export default class header extends Component {
             <h3>I've Got Some skills.</h3>
             <ul className="skill-bars">
               <li>
-                <div className="progress percent30"><span>30%</span></div>
+                <div className="progress percent50"><span>30%</span></div>
                 <strong>MERN Stack</strong>
               </li>
               <li>
-                <div className="progress percent45"><span>40%</span></div>
+                <div className="progress percent55"><span>40%</span></div>
                 <strong>Vanilla Javascript</strong>
               </li>
               <li>
@@ -45,7 +45,7 @@ export default class header extends Component {
                 <strong>HTML5 ~ CSS3 ~ Responsive</strong>
               </li>
               <li>
-                <div className="progress percent50"><span>50%</span></div>
+                <div className="progress percent55"><span>50%</span></div>
                 <strong>PHP ~ SQL ~ BBDD</strong>
               </li>
               <li>
