@@ -33,27 +33,27 @@ export default class header extends Component {
             <h3>I've Got Some skills.</h3>
             <ul className="skill-bars">
               <li>
-                <div className="progress percent50"><span>30%</span></div>
+                <div className="progress percent50">{/* <span>30%</span> */}</div>
                 <strong>MERN Stack</strong>
               </li>
               <li>
-                <div className="progress percent55"><span>40%</span></div>
+                <div className="progress percent55">{/*<span>40%</span>*/}</div>
                 <strong>Vanilla Javascript</strong>
               </li>
               <li>
-                <div className="progress percent90"><span>90%</span></div>
+                <div className="progress percent90">{/*<span>90%</span>*/}</div>
                 <strong>HTML5 ~ CSS3 ~ Responsive</strong>
               </li>
               <li>
-                <div className="progress percent55"><span>50%</span></div>
+                <div className="progress percent55">{/*<span>50%</span>*/}</div>
                 <strong>PHP ~ SQL ~ BBDD</strong>
               </li>
               <li>
-                <div className="progress percent80"><span>80%</span></div>
+                <div className="progress percent80">{/*<span>80%</span>*/}</div>
                 <strong>Environment develop Linux / Mac</strong>
               </li>
               <li>
-                <div className="progress percent90"><span>90%</span></div>
+                <div className="progress percent90">{/*<span>90%</span>*/}</div>
                 <strong>CS6 Collection</strong>
               </li>
             </ul>
@@ -61,7 +61,7 @@ export default class header extends Component {
         </div>
         <div className="row about-content about-content--buttons">
           <div className="col-six tab-full left">
-            <a href="/cv_veronica_moreno.pdf" className="btn btn--primary full-width">Download My CV</a>
+            <a target="_blank" href="../../assets/pdf/cv_en.pdf" className="btn btn--primary full-width">Download My CV</a>
           </div>
           <div className="col-six tab-full right">
             <a href="mailto:veronica.moreno.work@gmail.com" className="btn full-width">Hire Me Now</a>
